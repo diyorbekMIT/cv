@@ -88,34 +88,7 @@ function PostForm({ post, onSave, onCancel }) {
         />
       </div>
 
-      <div>
-        <label className="block text-sm font-medium text-slate-700 mb-1.5">
-          Cover Image
-        </label>
-        <div className="flex items-center gap-4">
-          <label className="btn-secondary text-sm cursor-pointer">
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleCoverUpload}
-              className="hidden"
-            />
-            Upload Image
-          </label>
-          {coverImage && (
-            <div className="flex items-center gap-2">
-              <img src={coverImage} alt="Cover" className="w-16 h-10 object-cover rounded" />
-              <button
-                type="button"
-                onClick={() => setCoverImage('')}
-                className="text-xs text-red-500 hover:text-red-700"
-              >
-                Remove
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
+
 
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-1.5">

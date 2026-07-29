@@ -82,22 +82,21 @@ export default function BlogPost() {
           )}
         </header>
 
-        {/* Cover Image */}
-        {post.coverImage && (
-          <div className="rounded-2xl overflow-hidden mb-10">
-            <img
-              src={post.coverImage}
-              alt={post.title}
-              className="w-full h-auto"
-            />
-          </div>
-        )}
-
         {/* Content */}
         <div
           className="prose-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+        
+        <div className="mt-12 pt-8 border-t border-slate-200">
+          <p className="text-slate-600">
+            For more thoughts, posts and updates, you can find in{' '}
+            <a href="https://t.me/diyorbek_thoughts" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              @diyorbek_thoughts
+            </a>
+            {' '}telegram channel.
+          </p>
+        </div>
       </article>
     </div>
     </>
