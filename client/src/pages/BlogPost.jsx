@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import api from '../api/client';
 
 export default function BlogPost() {
@@ -52,10 +53,15 @@ export default function BlogPost() {
   });
 
   return (
-    <div className="container-main py-16">
-      <article className="max-w-3xl mx-auto animate-slide-up">
-        {/* Back link */}
-        <Link
+    <>
+      <Helmet>
+        <title>{post.title} | Mamjonov Diyorbek</title>
+        {post.excerpt && <meta name="description" content={post.excerpt} />}
+      </Helmet>
+      <div className="container-main py-16">
+        <article className="max-w-3xl mx-auto animate-slide-up">
+          {/* Back link */}
+          <Link
           to="/blog"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-accent-600 transition-colors mb-8"
         >
@@ -94,5 +100,6 @@ export default function BlogPost() {
         />
       </article>
     </div>
+    </>
   );
 }

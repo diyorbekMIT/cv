@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   return (
-    <div className="min-h-[80vh] flex items-center">
-      <div className="container-main py-16 sm:py-20">
+    <>
+      <Helmet>
+        <title>Mamjonov Diyorbek | Software Engineer</title>
+        <meta name="description" content="Portfolio and CV of Mamjonov Diyorbek, a full-stack software engineer specializing in scalable web applications and AI workflow automations." />
+      </Helmet>
+      <div className="min-h-[80vh] flex items-center">
+        <div className="container-main py-16 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center animate-slide-up">
           {/* Profile Photo Column — First on Mobile, Left side on Desktop */}
           <div className="lg:col-span-5 flex justify-center lg:justify-start order-first lg:order-first">
@@ -103,6 +109,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
