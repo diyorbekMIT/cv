@@ -6,11 +6,11 @@ export default function Footer() {
           <div className="flex items-center gap-2.5">
             <img
               src="/profile.jpg"
-              alt="Mamjonov Diyorbek"
+              alt="Mamajonov Diyorbek"
               className="w-6 h-6 rounded-full object-cover object-top ring-1 ring-slate-300"
             />
             <span className="text-sm text-slate-500">
-              © {new Date().getFullYear()} Mamjonov Diyorbek. All rights reserved.
+              © {new Date().getFullYear()} Mamajonov Diyorbek. All rights reserved.
             </span>
           </div>
 

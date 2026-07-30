@@ -1,7 +1,7 @@
 # Site Content
 
 ## Personal Info
-- name: Mamjonov Diyorbek
+- name: Mamajonov Diyorbek
 - title: Software Engineer & Full-Stack Engineer
 - email: diyorbekjon2202.kr@gmail.com
 - location: Tashkent, Uzbekistan
@@ -14,7 +14,7 @@
 - subheadline: Software Engineer & Full-Stack Engineer with experience in Node.js, React, MERN Stack, Java/Spring, and AI workflow automations. Computer Science student at Inha University in South Korea.
 
 ## About / Bio
-Mamjonov Diyorbek is a Software Engineer & Full-Stack Engineer currently studying Integrated Systems Engineering in Computer Science at Inha University in South Korea. With deep hands-on experience across backend systems (Node.js, Express.js, Java/Spring, MongoDB, SQL, MERN Stack) and frontend frameworks (React, TypeScript, Redux Toolkit, TanStack Query, TailwindCSS), Diyorbek specializes in building scalable web applications and intelligent workflow automations combining AI APIs with modern backend architectures.
+Mamajonov Diyorbek is a Software Engineer & Full-Stack Engineer currently studying Integrated Systems Engineering in Computer Science at Inha University in South Korea. With deep hands-on experience across backend systems (Node.js, Express.js, Java/Spring, MongoDB, SQL, MERN Stack) and frontend frameworks (React, TypeScript, Redux Toolkit, TanStack Query, TailwindCSS), Diyorbek specializes in building scalable web applications and intelligent workflow automations combining AI APIs with modern backend architectures.
 
 ## Education
 - Institution: Inha University in South Korea

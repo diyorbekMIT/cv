@@ -42,7 +42,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                I am <strong>Mamjonov Diyorbek</strong>, a Software Engineer & Full-Stack Engineer studying Integrated Systems Engineering in Computer Science at Inha University in South Korea.
+                I am <strong>Mamajonov Diyorbek</strong>, a Software Engineer & Full-Stack Engineer studying Integrated Systems Engineering in Computer Science at Inha University in South Korea.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
                 My core focus spans backend architecture with Node.js, Express, Java/Spring, and MongoDB/SQL, modern frontend engineering with React, TypeScript, and TailwindCSS, as well as designing AI-driven workflow automations using n8n and LLM APIs.
@@ -52,7 +52,7 @@ export default function About() {
               <div className="w-48 h-60 rounded-2xl overflow-hidden shadow-lg border-2 border-white ring-4 ring-accent-100 bg-slate-100">
                 <img
                   src="/profile.jpg"
-                  alt="Mamjonov Diyorbek"
+                  alt="Mamajonov Diyorbek"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
@@ -113,7 +113,7 @@ export default function About() {
           <h2 className="text-2xl font-bold text-slate-900 mb-8">Curriculum Vitae</h2>
           <div className="card overflow-hidden">
             <div className="bg-slate-50 border-b border-slate-200 px-6 py-3 flex items-center justify-between">
-              <span className="text-sm font-medium text-slate-500">Mamjonov_Diyorbek_CV.pdf</span>
+              <span className="text-sm font-medium text-slate-500">Mamajonov_Diyorbek_CV.pdf</span>
               <a
                 href="/cv.pdf"
                 target="_blank"
@@ -125,7 +125,7 @@ export default function About() {
             </div>
             <iframe
               src="/cv.pdf"
-              title="Mamjonov Diyorbek CV"
+              title="Mamajonov Diyorbek CV"
               className="w-full border-0"
               style={{ height: '80vh' }}
             />

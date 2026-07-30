@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Mamjonov Diyorbek | Software Engineer</title>
-        <meta name="description" content="Portfolio and CV of Mamjonov Diyorbek, a full-stack software engineer specializing in scalable web applications and AI workflow automations." />
+        <title>Mamajonov Diyorbek | Software Engineer</title>
+        <meta name="description" content="Portfolio and CV of Mamajonov Diyorbek, a full-stack software engineer specializing in scalable web applications and AI workflow automations." />
       </Helmet>
       <div className="min-h-[80vh] flex items-center">
         <div className="container-main py-16 sm:py-20">
@@ -18,7 +18,7 @@ export default function Home() {
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-2xl border-4 border-white ring-4 ring-accent-100 bg-slate-100">
                 <img
                   src="/profile.jpg"
-                  alt="Mamjonov Diyorbek"
+                  alt="Mamajonov Diyorbek"
                   className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -37,7 +37,7 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
               Hi, I'm{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-accent-400">
-                Mamjonov Diyorbek
+                Mamajonov Diyorbek
               </span>
             </h1>
 

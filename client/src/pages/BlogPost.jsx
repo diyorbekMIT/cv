@@ -55,7 +55,7 @@ export default function BlogPost() {
   return (
     <>
       <Helmet>
-        <title>{post.title} | Mamjonov Diyorbek</title>
+        <title>{post.title} | Mamajonov Diyorbek</title>
         {post.excerpt && <meta name="description" content={post.excerpt} />}
       </Helmet>
       <div className="container-main py-16">

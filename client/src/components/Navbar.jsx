@@ -29,7 +29,7 @@ export default function Navbar() {
             className="font-semibold text-slate-900 text-base sm:text-lg hover:text-accent-600 transition-colors
                        absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 whitespace-nowrap"
           >
-            Mamjonov Diyorbek
+            Mamajonov Diyorbek
           </Link>
 
           {/* Desktop Links */}
