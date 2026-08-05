@@ -14,7 +14,7 @@
 - subheadline: Software Engineer & Full-Stack Engineer with experience in Node.js, React, MERN Stack, Java/Spring, and AI workflow automations. Computer Science student at Inha University in South Korea.
 
 ## About / Bio
-Mamajonov Diyorbek is a Software Engineer & Full-Stack Engineer currently studying Integrated Systems Engineering in Computer Science at Inha University in South Korea. With deep hands-on experience across backend systems (Node.js, Express.js, Java/Spring, MongoDB, SQL, MERN Stack) and frontend frameworks (React, TypeScript, Redux Toolkit, TanStack Query, TailwindCSS), Diyorbek specializes in building scalable web applications and intelligent workflow automations combining AI APIs with modern backend architectures.
+Mamajonov Diyorbek is a Software Engineer & Full-Stack Engineer currently studying Integrated Systems Engineering in Computer Science at Inha University in South Korea. With deep hands-on experience across backend systems (Node.js, Express.js, Java/Spring, MongoDB, SQL, MERN Stack) and frontend frameworks (React, TypeScript, Redux Toolkit, RTK Query, TailwindCSS), Diyorbek specializes in building scalable web applications and intelligent workflow automations combining AI APIs with modern backend architectures.
 
 ## Education
 - Institution: Inha University in South Korea
@@ -32,7 +32,7 @@ Mamajonov Diyorbek is a Software Engineer & Full-Stack Engineer currently studyi
 - Node.js / Express.js
 - JavaScript / TypeScript
 - Java / Spring Boot
-- MongoDB / SQL / PostgreSQL
+- MongoDB / SQL
 - REST APIs & AI API Integration
 - n8n Workflow Automation
 - Git / Linux
@@ -40,7 +40,7 @@ Mamajonov Diyorbek is a Software Engineer & Full-Stack Engineer currently studyi
 ### Frontend
 - React
 - TypeScript
-- Redux Toolkit / TanStack Query
+- Redux Toolkit / RTK Query
 - Tailwind CSS
 - HTML5 / CSS3
 

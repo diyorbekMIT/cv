@@ -1,6 +1,6 @@
 const skills = {
-  'Backend Skills': ['NodeJs', 'ExpressJs', 'JavaScript / TypeScript', 'Java / Spring', 'MongoDB', 'SQL / PostgreSQL', 'n8n', 'Git / Linux'],
-  'Frontend Skills': ['React', 'Redux Toolkit', 'TanStack Query', 'TailwindCSS', 'TypeScript', 'HTML5 / CSS3'],
+  'Backend Skills': ['NodeJs', 'ExpressJs', 'JavaScript / TypeScript', 'Java / Spring', 'MongoDB', 'SQL', 'n8n', 'Git / Linux'],
+  'Frontend Skills': ['React', 'Redux Toolkit', 'RTK Query', 'TailwindCSS', 'TypeScript', 'HTML5 / CSS3'],
   'Education': ['Inha University in South Korea', 'Integrated Systems Engineering in Computer Science', 'March 2023 - October 2025', 'OOP, Data Structures, Software Engineering'],
   'Languages': ['English — C1 (Advanced)', 'Russian — B2 (Upper-Intermediate)', 'Uzbek — Native'],
 };
