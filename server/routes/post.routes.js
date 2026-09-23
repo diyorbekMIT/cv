@@ -2,24 +2,15 @@ const express = require('express');
 const multer = require('multer');
 const path = require('path');
 const Post = require('../models/Post');
+const cloudinary = require('../config/cloudinary');
 const requireAuth = require('../middleware/auth.middleware');
 
 const router = express.Router();
 
-// Multer config
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, path.join(__dirname, '..', 'uploads'));
-  },
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
-    const ext = path.extname(file.originalname);
-    cb(null, uniqueSuffix + ext);
-  },
-});
-
+// Multer config — the dyno filesystem is ephemeral, so images are buffered
+// in memory and handed straight to Cloudinary instead of being written to disk.
 const upload = multer({
-  storage,
+  storage: multer.memoryStorage(),
   limits: { fileSize: 5 * 1024 * 1024 }, // 5 MB
   fileFilter: (req, file, cb) => {
     const allowed = /jpeg|jpg|png|gif|webp|svg/;
@@ -129,8 +120,13 @@ router.post('/upload', requireAuth, upload.single('image'), async (req, res) => 
       return res.status(400).json({ message: 'No file uploaded' });
     }
 
-    const url = `/uploads/${req.file.filename}`;
-    return res.json({ url });
+    const dataUri = `data:${req.file.mimetype};base64,${req.file.buffer.toString('base64')}`;
+    const result = await cloudinary.uploader.upload(dataUri, {
+      folder: 'cv-website',
+      resource_type: 'image',
+    });
+
+    return res.json({ url: result.secure_url });
   } catch (error) {
     console.error('Upload error:', error);
     return res.status(500).json({ message: 'Server error' });
