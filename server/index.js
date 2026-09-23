@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth.routes');
 const postRoutes = require('./routes/post.routes');
 const sitemapRoutes = require('./routes/sitemap.routes');
+const imageRoutes = require('./routes/image.routes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -34,8 +35,10 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json({ limit: '10mb' }));
 
-// Legacy local-dev uploads. In production images are served from Cloudinary.
+// Uploaded images. Files on disk win (legacy local-dev uploads), and anything
+// not found there falls through to the copies stored in MongoDB.
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', imageRoutes);
 
 // Routes
 app.use('/api/auth', authRoutes);
