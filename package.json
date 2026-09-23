@@ -8,6 +8,6 @@
   },
   "scripts": {
     "start": "node server/index.js",
-    "heroku-postbuild": "npm ci --prefix server --omit=dev && npm ci --prefix client && npm run build --prefix client && rm -rf client/node_modules"
+    "heroku-postbuild": "npm ci --prefix server --omit=dev && npm ci --prefix client --include=dev && npm run build --prefix client && rm -rf client/node_modules"
   }
 }
